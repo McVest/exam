@@ -1,0 +1,76 @@
+.main-banner {
+  position: relative;
+  &__content {
+    max-width: 1200px;
+    margin: 0 auto;
+    &__item {
+      position: absolute;
+      max-width: 660px;
+      padding: 0 20px;
+      top: 125px;
+      z-index: 2;
+    }
+  }
+  &__title h1 {
+    font-family: $f-inter;
+    font-size: 64px;
+    color: $c-white;
+    @media (max-width: 660px) {
+      font-size: 42px;
+    }
+    @media (max-width: 450px) {
+      font-size: 30px;
+    }
+    @media (max-width: 330px) {
+      font-size: 26px;
+    }
+  }
+  &__subtitle {
+    max-width: 380px;
+    & p {
+      font-family: $f-lato, sans-serif;
+      font-size: 16px;
+      color: $c-white;
+      line-height: 28px;
+      @media (max-width: 660px) {
+        font-size: 12px;
+      }
+    }
+  }
+  &__tour-date {
+    display: inline-block;
+    & p {
+      background: linear-gradient(91.82deg, #fb8b62 5.83%, #f47648 89.73%), $c-secondary;
+      font-family: $f-montserrat, sans-serif;
+      border-radius: 16px;
+      padding: 10px 20px;
+      text-align: center;
+      color: $c-white;
+      font-size: 30px;
+      @media (max-width: 660px) {
+        font-size: 18px;
+      }
+      @media (max-width: 330px) {
+        font-size: 16px;
+      }
+    }
+  }
+  &__tour-button {
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    display: flex;
+    width: 220px;
+    height: 64px;
+    @media (max-width: 660px) {
+      width: 170px;
+      height: 32px;
+    }
+  }
+  &__slider {
+    position: absolute;
+    height: 320px;
+    bottom: 30px;
+    right: 0;
+  }
+}

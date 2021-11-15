@@ -1,0 +1,9 @@
+mixin modal(args)
+    #js-modal.modal
+        .modal-content
+            ion-icon(name="close-outline").close
+            .modal__img
+                img(src="", alt="")#js-modal-img
+            .modal__info
+                h2#js-modal-title.modal-title= title
+                p#js-modal-text.modal-text= content

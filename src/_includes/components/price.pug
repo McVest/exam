@@ -1,0 +1,52 @@
+mixin price()
+  .price#price
+    .price__wrapper  
+      .price-services
+        .price-services__wrapper
+          .price-services__title
+            h2 Стоимость участия
+          .price__section
+            .price-services__price
+              .price-services__item
+                .price-services__info 
+                    h3 Базовый (для камчадал)
+                .price-services__content 
+                    p 79 000 руб 
+              .price-services__item
+                .price-services__info 
+                    h3 Базовый + проживание
+                .price-services__content 
+                    p 99 000 руб 
+              .price-services__item
+                .price-services__info 
+                    h3 Базовый + проживание + долина гейзеров
+                .price-services__content 
+                    p 179 000 руб      
+            .price__info
+              .price__link
+                +link({classList: "link__price-buttom", href: "#", content: "Информация о бронях"})
+                +link({classList: "link__price-buttom", href: "#", content: "Важная информация"})
+                +link({classList: "link__price-buttom", href: "#", content: "Условия договора и возврата"})
+              .price__info--online(style="    position: relative;")
+                +link({classList: "link__price-buttom--online", href: "#", content: "Отправить заявку"})
+            .price__included
+              .price__included__title
+                h4 В стоимость входит
+              .price__included__content 
+                ul 
+                  li встреча и проводы в аэропорту
+                  li питание: обеды во время экскурсий 
+                  li услуги гида
+                  li все транспортные услуги ( автобусы, джипы-вездеходы 4WD)
+                  li все указанные в программе экскурсии
+            .price__included
+              .price__included__title
+                h4 За дополнительную плату
+              .price__included__content 
+                ul 
+                  li вертолётная экскурсия в Долину Гейзеров и кальдеру Узона, оплачивается в день вылета
+                  li дополнительные экскурсии и опции
+                  li размещение в гостинице
+                  li питание(кроме обедов во время экскурсий)
+                  li личные расходы
+                  

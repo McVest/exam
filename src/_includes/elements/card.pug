@@ -1,0 +1,15 @@
+mixin card(args)
+  - let srcImg = args.srcImg || '';
+  - let altImg = args.altImg || '#';
+  - let titleImg = args.titleImg ;
+  - let textImg = args.textImg ;
+
+  .card
+    .card__wrapper
+      .card__img
+        img(src= srcImg, alt= altImg)
+      .card__info
+        .card__text
+          .card__title 
+            h2= titleImg
+          p= textImg

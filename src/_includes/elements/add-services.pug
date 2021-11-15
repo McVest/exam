@@ -1,0 +1,8 @@
+mixin add-services(args)
+    - let servicesInfo=args.servicesInfo;
+    - let servicesContent=args.servicesContent; 
+    .add-services__item
+        .add-services__info 
+            h3= servicesInfo
+        .add-services__content 
+            p= servicesContent

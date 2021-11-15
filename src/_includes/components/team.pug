@@ -1,0 +1,43 @@
+mixin team()
+  .team#team
+    .team__wrapper 
+      .team__info
+        .team__title 
+          h3 Про нашу супер крутую команду Dreamkam Tour
+        .team__content 
+          p Наша команда - это люди влюбленные в свою работу. Каждый из них обладает проффесиональными знаниями, хорошей физической подготовкой. Следят за вашей безпасностью в туре, и тем чтобы каждый из вас получил максимальное колличество эмоций.
+      .team__swiper
+        .swiper.teamSwiper 
+          .swiper-wrapper.team__swiper-wrapper
+            .swiper-slide.team__swiper-slide
+              img(src="./aseets/image/teamSwiper/team1.png" alt="image")
+              .team__swiper-info
+                p Евгений Барсуков,
+                +link({classList: "link__fitback-team", href: "#", content: "@mig_vol_"})
+            .swiper-slide.team__swiper-slide
+              img(src="./aseets/image/teamSwiper/team2.png" alt="image")
+              .team__swiper-info
+                p Евгений Барсуков,
+                +link({classList: "link__fitback-team", href: "#", content: "@mig_vol_"})
+            .swiper-slide.team__swiper-slide
+              img(src="./aseets/image/teamSwiper/team3.png" alt="image")
+              .team__swiper-info
+                p Евгений Барсуков,
+                +link({classList: "link__fitback-team", href: "#", content: "@mig_vol_"})
+            .swiper-slide.team__swiper-slide
+              img(src="./aseets/image/teamSwiper/team2.png" alt="image")
+              .team__swiper-info
+                p Евгений Барсуков,
+                +link({classList: "link__fitback-team", href: "#", content: "@mig_vol_"})
+            .swiper-slide.team__swiper-slide
+              img(src="./aseets/image/teamSwiper/team1.png" alt="image")
+              .team__swiper-info
+                p Евгений Барсуков,
+                +link({classList: "link__fitback-team", href: "#", content: "@mig_vol_"})
+            .swiper-slide.team__swiper-slide
+              img(src="./aseets/image/teamSwiper/team3.png" alt="image")
+              .team__swiper-info
+                p Евгений Барсуков,
+                +link({classList: "link__fitback-team", href: "#", content: "@mig_vol_"})
+          div(dir="rtl").swiper-button-next
+          div(dir="rtl").swiper-button-prev

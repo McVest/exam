@@ -1,0 +1,234 @@
+.application {
+  background-image: url(../aseets/image/mail.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: inherit;
+  &__wrapper {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 1400px;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__form {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 95px;
+    @media (max-width: 1210px) {
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+  }
+  &__info {
+    margin-left: 20px;
+  }
+  &__title {
+    font-family: $f-inter, sans-serif;
+    font-size: 36px;
+    line-height: 48px;
+    @media (max-width: 420px) {
+      line-height: 32px;
+      font-size: 24px;
+    }
+  }
+  &__socials {
+    font-size: 30px;
+    margin-top: 25px;
+    display: flex;
+    width: 135px;
+    justify-content: space-between;
+    & .link {
+      text-decoration: none;
+      color: $c-black;
+    }
+  }
+  &__mail {
+    max-width: 1200px;
+    min-height: 370px;
+    display: flex;
+    color: $c-white;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &__title h3 {
+      font-family: $f-inter, sans-serif;
+      font-size: 36px;
+      line-height: 48px;
+    }
+    &__subtitle {
+      margin: 30px 0 30px 0;
+      font-family: $f-lato, sans-serif;
+      font-size: 20px;
+      line-height: 32px;
+    }
+    &__input input {
+      background: transparent;
+      width: 100%;
+      height: 40px;
+      border-left: none;
+      border-right: none;
+      border-top: none;
+      color: $c-white;
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+  }
+  &__img {
+    max-width: 365px;
+  }
+}
+
+.number {
+  position: relative;
+  display: flex;
+  &__controls {
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    display: flex;
+    font-size: 32px;
+    color: #275553;
+  }
+}
+
+.form {
+  max-width: 565px;
+  margin: 20px;
+  &__wrapper {
+    display: flex;
+    height: 635px;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__title {
+    font-family: $f-lato-light, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  &__writeInInputs {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &__name {
+      & input {
+        background: transparent;
+        width: 260px;
+        height: 40px;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+      }
+    }
+    &__number {
+      & input {
+        background: transparent;
+        width: 260px;
+        height: 40px;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+      }
+    }
+  }
+  &__tariffs {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: space-around;
+  }
+  &__radiobuttons {
+    display: flex;
+    justify-content: space-between;
+    & label {
+      padding: 10px;
+    }
+    & input[type="radio"]:checked:before {
+      content: "";
+      display: block;
+      position: relative;
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      background: #275553;
+    }
+  }
+  &__writeDate {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &__start {
+      & input {
+        background: transparent;
+        width: 260px;
+        height: 40px;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+      }
+    }
+    &__end {
+      & input {
+        background: transparent;
+        width: 260px;
+        height: 40px;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+      }
+    }
+  }
+  &__writeText {
+    &__name {
+      & textarea {
+        background: transparent;
+        width: 75%;
+        border-top: 1px;
+        border-left: none;
+        padding: 0;
+        border-right: none;
+        padding-top: 10px;
+        resize: none;
+        width: 100%;
+      }
+    }
+  }
+  & button {
+    width: 180px;
+    height: 40px;
+    background: #f47648;
+    border-radius: 5px;
+    border: none;
+    color: $c-white;
+    opacity: 0.7;
+    margin-top: 50px;
+    margin-left: calc(100% - 180px);
+    &:hover {
+      opacity: 1;
+    }
+  }
+  &__mail {
+    display: flex;
+    align-items: baseline;
+    button {
+      width: 180px;
+      height: 40px;
+      background: #f47648;
+      border-radius: 5px;
+      border: none;
+      color: $c-white;
+      opacity: 0.7;
+      margin-left: 20px;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}

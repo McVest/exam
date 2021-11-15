@@ -1,0 +1,155 @@
+.stack-day {
+  &-five-and-six {
+    background-image: url(../aseets/image/five-six.png);
+    justify-content: space-evenly;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    flex-direction: column;
+    position: relative;
+    min-height: 1600px;
+    overflow: hidden;
+    display: flex;
+    &::before {
+      background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+      position: absolute;
+      min-height: 1600px;
+      content: "";
+      width: 100%;
+      top: 0;
+    }
+    &::after {
+      background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 1) 39%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      background-image: url(../aseets/image/cloud.png);
+      position: absolute;
+      height: 607px;
+      content: "";
+      width: 100%;
+      bottom: 0;
+    }
+  }
+  
+  &-five {
+    &__wrapper {
+      justify-content: flex-end;
+      max-width: 1200px;
+      margin-top: 80px;
+      color: $c-white;
+      margin: 0 auto;
+      display: flex;
+      position: relative;
+      width: 100%;
+    }
+    &__title {
+      font-family: $f-inter-bold;
+      line-height: 50px;
+      font-size: 40px;
+      color: $c-white;
+      @media (max-width: 500px) {
+        line-height: 32px;
+        font-size: 24px;
+      }
+      & span {
+        color: $c-secondary;
+      }
+    }
+    &__section {
+      &-text {
+        color: $c-dark-gray;
+        max-width: 460px;
+        padding: 0 20px;
+        z-index: 10;
+        @media (max-width: 780px) {
+          margin-bottom: 600px;
+          max-width: 100%;
+        }
+      }
+      &-slider {
+        right: calc(50% + 100px);
+        position: absolute;
+        height: 320px;
+        bottom: 130px;
+        @media (max-width: 780px) {
+          right: auto;
+          left: 0;
+        }
+        & .day-five-slider > .swiper-button-prev {
+          right: 0;
+        }
+        & .day-five-slider > .swiper-button-next {
+          right: 50px;
+          left: auto;
+        }
+      }
+    }
+    &__content {
+      font-family: $f-lato;
+      line-height: 24px;
+      margin-top: 50px;
+      font-size: 16px;
+      color: $c-white;
+      & p {
+        margin: 0;
+      }
+    }
+  }
+  &-six {
+    &__wrapper {
+      max-width: 1200px;
+      color: $c-white;
+      margin: 0 auto;
+      width: 100%;
+      position: relative;
+      z-index: 10;
+    }
+    &__title {
+      font-family: $f-inter-bold;
+      line-height: 50px;
+      font-size: 40px;
+      color: $c-white;
+      @media (max-width: 500px) {
+        line-height: 32px;
+        font-size: 24px;
+      }
+      & span {
+        color: $c-secondary;
+      }
+    }
+    &__section {
+      &-text {
+        color: $c-dark-gray;
+        max-width: 460px;
+        padding: 0 20px;
+        @media (max-width: 780px) {
+          margin-bottom: 600px;
+          max-width: 100%;
+        }
+      }
+      &-slider {
+        left: calc(50% + 100px);
+        position: absolute;
+        height: 320px;
+        bottom: 100px;
+        @media (max-width: 780px) {
+          left: auto;
+          right: 0;
+          bottom: -400px;
+        }
+      }
+    }
+    &__content {
+      line-height: 24px;
+      color: $c-white;
+      margin-top: 50px;
+      font-size: 16px;
+      & p {
+        margin: 0;
+      }
+    }
+  }
+}

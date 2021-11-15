@@ -1,0 +1,68 @@
+mixin footer()
+  .footer 
+    .footer__wrapper
+      .footer__wrapper-block
+        .footer__menu 
+          .footer__menu__logo 
+            img(src="../aseets/image/footer__logo.png" alt="")
+          .footer__navigation 
+            nav.footer__navigation__wrapper
+              ul#hamburger__menu.footer__navigation__list
+                li.footer__navigation__item
+                  +link({classList: "footer__link__navigation", href: "./index.html", content: "Расписание тура"})
+                li.footer__navigation__item 
+                  +link({classList: "footer__link__navigation", href: "#", content: "Как записаться"})
+                li.footer__navigation__item
+                  button.footer__link__navigation.navigation__team Команда
+                li.footer__navigation__item 
+                  button.footer__link__navigation.navigation__price Стоимость
+                li.footer__navigation__item
+                  +link({classList: "footer__link__navigation", href: "./reservation.html", content: "Забронировать"})
+        .footer__inst
+          .footer__inst__info 
+            .footer__inst__link 
+              h3 @mig_vol_
+            .footer__inst__button
+              +link({classList: "footer__link__navigation--reservation", content: "Подписаться"})
+          .footer__inst__photo
+            .footer__inst-wrapper
+              .footer__inst-slide
+                img(src="./aseets/image/footerSwiper/footer1.png" alt="image")
+              .footer__inst-slide
+                img(src="./aseets/image/footerSwiper/footer2.png" alt="image")
+              .footer__inst-slide
+                img(src="./aseets/image/footerSwiper/footer3.png" alt="image")
+              .footer__inst-slide
+                img(src="./aseets/image/footerSwiper/footer2.png" alt="image")
+              .footer__inst-slide
+                img(src="./aseets/image/footerSwiper/footer1.png" alt="image")
+              .footer__inst-slide
+                img(src="./aseets/image/footerSwiper/footer3.png" alt="image")
+        .footer__social
+          .footer__inst__video  
+            .footer__video 
+              a(href="https://www.instagram.com/mig_vol_/?hl=ru") 
+                img(src="./aseets/image/inst.svg" alt="")
+              .footer__video__info 
+                h4 Смотрите видео отзывы наших клиентов
+                +link({classList: "footer__link__video", href: "https://www.instagram.com/mig_vol_/?hl=ru", content: "Перейти в Instagram"})
+          .footer__link__social
+            .footer__title 
+              h2 Онлайн-заявка
+            .footer__socials 
+              a.link( href="https://www.instagram.com/")
+                ion-icon(name="logo-instagram")
+              a.link( href="https://uk-ua.facebook.com/" ) 
+                ion-icon(name="logo-facebook")
+              a.link( href="https://vk.com/") 
+                ion-icon(name="logo-vk")
+        address.footer__address__wrapper   
+            .footer__phone 
+              a(href="tel:+77603542323") + 7 (760) 354-23-23
+              p Работаем с 9:00 до 18:00
+            .footer__mail
+              ion-icon(name="mail-outline")
+              a(href="mailto:vlad@htmlbook.ru") vlad@htmlbook.ru
+            .footer__address
+              ion-icon(name="location-outline")
+              a(href="https://www.google.com.ua/maps/place/%D0%BF%D1%80%D0%BE%D1%81%D0%BF.+%D0%9F%D0%BE%D0%B1%D0%B5%D0%B4%D1%8B,+71,+%D0%A7%D0%B5%D1%80%D0%BD%D0%B8%D0%B3%D0%BE%D0%B2,+%D0%A7%D0%B5%D1%80%D0%BD%D0%B8%D0%B3%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C") Чернигов, просп. Победы, 71

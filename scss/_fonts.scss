@@ -1,0 +1,17 @@
+// Lato fonts 400
+@include font-faces($f-montserrat-light, "Montserrat/Montserrat-Light", 300, normal );
+@include font-faces($f-inter-bold, "Inter/Inter-Bold", bold, normal );
+@include font-faces($f-pacifico, "Pacifico/Pacifico-Regular", 400);
+@include font-faces($f-montserrat, "Montserrat/Montserrat-Bold" );
+@include font-faces($f-inter, "Inter/Inter-Black", 900, normal );
+@include font-faces($f-lato-light, "Lato/Lato-Light", 300);
+@include font-faces($f-lato, "Lato/Lato-Regular", 400);
+
+// @include font-face('GothamPro', 'GothamPro/GothamPro-Bold', bold, normal);
+// @include font-face('GothamPro', 'GothamPro/GothamPro-Medium', 500, normal);
+// @include font-face('GothamPro', 'GothamPro/GothamPro-LightItalic', 300, italic);
+// @include font-face('GothamPro', 'GothamPro/GothamPro-Italic', normal, italic);
+// @include font-face('GothamPro', 'GothamPro/GothamPro', normal, normal);
+// @include font-face('GothamPro', 'GothamPro/GothamPro-MediumItalic', 500, italic);
+// @include font-face('GothamPro', 'GothamPro/GothamPro-Light', 300, normal);
+// @include font-face('GothamPro', 'GothamPro/GothamPro-BoldItalic', bold, italic);

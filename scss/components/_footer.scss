@@ -1,0 +1,177 @@
+.footer {
+  background: #212121;
+  &__wrapper {
+    display: flex;
+    min-height: 470px;
+    align-items: center;
+    justify-content: center;
+    &-block {
+      justify-content: space-between;
+      max-width: 1240px;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  &__menu {
+    height: 220px;
+    width: 175px;
+    margin: 20px;
+    &__logo {
+      & img {
+        width: 175px;
+        height: 35px;
+      }
+    }
+  }
+  &__navigation {
+    &__list {
+      padding: 0;
+    }
+    &__item {
+      list-style-type: none;
+      & button {
+        border: none;
+        outline: none;
+        background: none;
+        color: #bababa;
+        padding: 0;
+        cursor: pointer;
+        font-size: 16px to, sans-serif;
+        line-height: 24px;
+      }
+      & a {
+        font-family: $f-lato, sans-serif;
+        line-height: 24px;
+        color: #bababa;
+        font-size: 16px;
+      }
+    }
+  }
+  &__inst {
+    max-width: 335px;
+    margin: 20px;
+    &__info {
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 15px;
+      display: flex;
+    }
+    &__link h3 {
+      font-family: $f-inter, sans-serif;
+      line-height: 28px;
+      color: #bababa;
+      font-size: 16px;
+    }
+    &__button {
+      border: 1px solid white;
+      border-radius: 10px;
+      padding: 10px 35px;
+      & a {
+        color: $c-white;
+      }
+    }
+    &-wrapper {
+      justify-content: space-between;
+      min-height: 235px;
+      max-width: 335px;
+      flex-wrap: wrap;
+      display: flex;
+    }
+    &-slide {
+      height: 110px;
+      width: 105px;
+    }
+  }
+  &__video {
+    justify-content: space-between;
+    display: flex;
+
+    &__info {
+      & h4 {
+        font-family: $f-inter-bold, sans-serif;
+        line-height: 24px;
+        font-size: 16px;
+        color: $c-white;
+        width: 225px;
+      }
+      & a {
+        font-family: $f-lato, sans-serif;
+        line-height: 16px;
+        color: #bababa;
+        font-size: 16px;
+        width: 225px;
+        &:hover {
+          transition: $t-normal;
+          color: $c-secondary;
+        }
+      }
+    }
+  }
+  &__title h2 {
+    font-family: $f-inter-bold, sans-serif;
+    line-height: 24px;
+    color: #ffffff;
+    font-size: 16px;
+  }
+  &__social {
+    margin: 20px;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 205px;
+    display: flex;
+    width: 308px;
+  }
+  &__socials {
+
+    & a {
+      color: $c-dark-gray;
+      font-size: 24px;
+      &:hover {
+        transition: $t-normal;
+        color: $c-secondary;
+      }
+    }
+  }
+  &__phone {
+    & p {
+      font-family: $f-montserrat, sans-serif;
+      font-size: 14px;
+      line-height: 32px;
+      color: #bababa;
+    }
+    & a {
+      font-family: $f-inter-bold, sans-serif;
+      font-size: 20px;
+      line-height: 32px;
+      color: $c-white;
+    }
+  }
+  &__mail {
+    & ion-icon {
+      color: $c-white;
+      font-size: 16px;
+    }
+    & a {
+      font-family: $f-lato, sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+      color: $c-white;
+    }
+  }
+  &__address {
+    &__wrapper{
+      margin: 20px;
+    }
+    & ion-icon {
+      color: $c-white;
+      font-size: 16px;
+    }
+    & a {
+      font-family: $f-lato, sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+      color: $c-white;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+mixin stack-day-five-and-six()
+  .stack-day-five-and-six  
+    .stack-day-five
+      .stack-day-five__wrapper 
+        div(dir="rtl").stack-day-five__section-slider
+          +stack-day-slider({classList:'day-five-slider'})
+        .stack-day-five__section-text
+          .stack-day-five__title
+            h4 
+              span День 5. 
+              | Морская прогулка к острову Старичков
+          .stack-day-five__content
+            p 
+              | Инструктаж по поведению группы при передвижении на плавсредствах, приему таблеток от морской болезни.
+              br
+              br
+
+              | Выезд на причал.  Морская прогулка по Авачинской бухте. Осмотр панорамы города Петропавловска-Камчатского, Авачинской губы и Авачинского залива. Маршрут пролегает мимо бухты Тихая, острова Бабушкин камень, мыса Станицкого, камней «Три брата». Увлекательная возможность донной рыбалки на терпуга, ленка, камбалу у «Трех братьев», мыса Безымянный, у 
+              button#js-step-5.modal__button острова Старичков.
+              br
+              br
+              | Осмотр птичьих базаров - смешанных колонии кайр, моевок и бакланов. Трансфер в гостиницу.
+              br
+              br
+              | Продолжительность 6 часов.
+    .stack-day-six
+      .stack-day-six__wrapper 
+        .stack-day-six__section-text
+          .stack-day-six__title
+            h4 
+              span День 6.
+              | Берег Тихого океана, экскурсия по городу
+          .stack-day-six__content
+            p 
+              | Поездка на берег Тихого океана, в район Халактырского пляжа. Прогулка. Обед в городе. Обзорная экскурсия по г. Петропавловску-Камчатскому с посещением смотровых площадок. Рыбный рынок. 
+              br
+              br
+              | продолжительность -5 часов.  Трансфер в гостиницу.
+            .add-services
+              .add-services__wrapper
+                .add-services__title
+                  h2=servicesTitle
+                .add-services__block
+                  +add-services({servicesInfo:"Серфинг", servicesContent:"Прыжки с высоты над водопадом. Записываться заранее."})
+                  +add-services({servicesInfo:"SUP борды",servicesContent:"Прыжки с высоты над водопадом. Записываться заранее."})
+        .stack-day-six__section-slider
+          +stack-day-slider({classList:'day-six-slider'})

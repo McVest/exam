@@ -1,0 +1,93 @@
+.stack-day-three {
+  background-image: url(../aseets/image/day3.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  position: relative;
+  position: relative;
+  min-height: 800px;
+  overflow: hidden;
+  &::before{
+    background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(255,255,255,1) 57%, rgba(255,255,255,1) 100%);
+    position: absolute;
+    height: 700px;
+    content: '';
+    width: 100%;
+    top: 0;
+  }
+  &::after{
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 39%, rgba(255,255,255,0) 100%);
+    position: absolute;
+    height: 150px;
+    content: '';
+    width: 100%;
+    bottom: 0;
+  }
+  &__wrapper {
+    justify-content: flex-end;
+    max-width: 1200px;
+    margin-top: 80px;
+    color: $c-white;
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+  }
+  &__title {
+    margin-top: 80px;
+    font-family: $f-inter-bold;
+    line-height: 50px;
+    font-size: 40px;
+    color: $c-black;
+    @media (max-width: 500px) {
+      line-height: 32px;
+      font-size: 24px;
+    }
+    & span {
+      color: $c-secondary;
+    }
+  }
+  &__section {
+    &-text {
+      color: $c-dark-gray;
+      max-width: 460px;
+      padding: 0 20px;
+      z-index: 10;
+      @media (max-width: 780px) {
+        margin-bottom: 600px;
+        max-width: 100%;
+      }
+    }
+    &-slider {
+      right: calc(50% + 100px);
+      position: absolute;
+      height: 320px;
+      bottom: 260px;
+      @media (max-width: 780px) {
+        right: auto;
+        left: 0;
+      }
+      & .day-three-slider > .swiper-button-prev,
+      .swiper-button-next {
+        border: 1px solid $c-dark-gray;
+        color: $c-dark-gray;
+      }
+      & .day-three-slider > .swiper-button-prev {
+        right: 0;
+      }
+      & .day-three-slider > .swiper-button-next {
+        right: 50px;
+        left: auto;
+      }
+    }
+  }
+  &__content {
+    font-family: $f-lato;
+    line-height: 24px;
+    margin-top: 50px;
+    font-size: 16px;
+    color: $c-black;
+    & p {
+      margin: 0;
+    }
+  }
+}

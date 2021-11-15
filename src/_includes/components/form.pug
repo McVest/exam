@@ -1,0 +1,82 @@
+mixin form()
+  .application#application
+    .application__wrapper
+      .application__form
+        .application__info
+          .application__title 
+            h2 Онлайн-заявка
+          .application__socials 
+            a.link( href="https://www.instagram.com/")
+              ion-icon(name="logo-instagram")
+            a.link( href="https://uk-ua.facebook.com/" ) 
+              ion-icon(name="logo-facebook")
+            a.link( href="https://vk.com/") 
+              ion-icon(name="logo-vk")
+        form(action="", method="post").form#myForm
+          .form__wrapper
+            .form__writeInInputs
+              .form__writeInInputs__name
+                h3.form__title 
+                  label(for="full_name") Имя участника
+                input(type="text" name="full_name" id="full_name" placeholder="Имя" required)
+              .form__writeInInputs__number
+                h3.form__title  
+                  label(for="Quantity") Количество человек
+                .number
+                  input(type="text" id="Quantity" name="number"  required)
+                  .number__controls
+                    .nc-minus 
+                      ion-icon(name="remove-outline")
+                    .nc-plus 
+                      ion-icon(name="add-outline")
+            .form__tariffs 
+              h3.form__title  
+                label  Тариф
+              .form__radiobuttons  
+                .form__radiobutton
+                  input(type="radio" value="Базовый (для камчадал) 79 000 руб" id="price_basic" class="form__price" name="price")
+                  label(for="price_basic") Базовый (для камчадал)
+                .form__radiobutton__price
+                  label(for="price_basic") 79 000 руб
+              .form__radiobuttons  
+                .form__radiobutton
+                  input(type="radio" value="Базовый + проживание 99 000 руб" id="price_medium" class="form__price" name="price" checked )
+                  label(for="price_medium") Базовый + проживание
+                .form__radiobutton__price
+                  label(for="price_medium") 99 000 руб
+              .form__radiobuttons  
+                .form__radiobutton
+                  input(type="radio" value=" Базовый + проживание + долина гейзеров 179 000 руб" id="price_high" class="form__price" name="price" )
+                  label(for="price_high") Базовый + проживание + долина гейзеров
+                .form__radiobutton__price
+                  label(for="price_high") 179 000 руб
+            .form_date
+              h3.form__title  
+                label Даты тура
+              .form__writeDate  
+                .form__writeDate__start
+                  h3.form__title  
+                    label Начало путишествия
+                  input(type="date" id="date-start" name="date-start" required)
+                .form__writeDate__end
+                  h3.form__title  
+                    label Конец путишествия
+                  input(type="date" id="date-end" name="date-end" required)
+            .form__writeText
+              .form__writeText__name
+                h3.form__title  
+                  label Комментарий
+                textarea(placeholder="Коментарий" name="coment" id="coment"  rows="1") 
+            button(type="submit")  Submit
+      .application__mail
+        .application__img
+          img(src="./aseets/image/magazine-kamchatka1.png", alt="")
+        .application__content
+          .application__mail__title 
+            h3 Что нужно знать отправляясь на Камчатку?
+          .application__mail__subtitle
+            h5 Получите памятку туриста просто оставив свой e-mail.
+          .application__mail__input 
+            form(action="", method="post").form__mail 
+              input(type="mail" id="mail" name="mail" placeholder="Ваш e-mail")
+              button(type="submit")  Submit

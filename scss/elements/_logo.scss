@@ -1,0 +1,9 @@
+.logo{
+    &__wrapper{
+        margin-left: 10px;
+        height: 32px;
+        @media (max-width: 910px){
+            width: 42px;
+        }
+    }
+}

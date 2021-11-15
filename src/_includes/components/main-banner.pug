@@ -1,0 +1,17 @@
+mixin main-banner()
+    .main-banner
+        .main-banner__wrapper 
+            +banner-slider()
+            .main-banner__content 
+                .main-banner__content__item 
+                    .main-banner__title 
+                        h1 Мечты о далекой Камчатке - близко
+                    .main-banner__tour-date
+                        p 23.06 - 04.07 DREAM TOUR
+                    .main-banner__subtitle 
+                        p Тур перевернет ваш мир с ног на голову и оставит впечатления на всю жизнь.
+                    .main-banner__tour-button
+                        +link({classList: "link__tour-button", href: "./index.html", content: "Расписание тура"})
+                .main-banner__slider
+                    +slider({classList:'banner-slider'})
+                

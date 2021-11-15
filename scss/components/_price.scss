@@ -1,0 +1,107 @@
+.price {
+  &__wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  &__section {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    display: flex;
+    padding-bottom: 60px;
+    border-bottom: 1px solid $c-black;
+  }
+
+  &-services {
+    &__title h2 {
+      font-family: $f-inter, sans-serif;
+      font-size: 64px;
+      line-height: 72px;
+      margin-top: 120px;
+      @media (max-width: 420px) {
+        line-height: 32px;
+        font-size: 24px;
+      }
+    }
+    &__price {
+      width: 800px;
+      margin: 20px;
+      @media (max-width: 500px) {
+      }
+    }
+    &__item {
+      border-bottom: 1px solid #00000040;
+      justify-content: space-between;
+      padding: 30px 30px 30px 0;
+      align-items: center;
+      display: flex;
+    }
+    &__info {
+      & h3 {
+        @media (max-width: 390px) {
+          font-size: 14px;
+        }
+      }
+    }
+    &__content p {
+      margin: 0;
+      font-family: $f-lato, sans-serif;
+      font-size: 24px;
+      line-height: 24px;
+
+      @media (max-width: 390px) {
+        font-size: 16px;
+      }
+    }
+  }
+  &__info {
+    display: flex;
+    max-height: 275px;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+    &--online {
+      height: 65px;
+      width: 235px;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__link {
+    display: flex;
+    min-height: 120px;
+    max-width: 245px;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__included {
+    max-width: 400px;
+    &__title {
+      margin: 70px 0 0 40px;
+      & h4 {
+        font-family: $f-lato, sans-serif;
+        font-size: 24px;
+        line-height: 24px;
+        color: #275553;
+      }
+    }
+    &__content {
+      & ul {
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        & li {
+          font-family: $f-lato, sans-serif;
+          font-size: 16px;
+          line-height: 24px;
+          &::marker {
+            color: #d3e7e3;
+          }
+        }
+      }
+    }
+  }
+}

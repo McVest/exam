@@ -1,0 +1,31 @@
+mixin stack-day-slider(args)
+    -let classList = args.classList;
+    
+    .swiper.my-slider(class= classList)
+        .swiper-wrapper
+            div(style="background-image: url(../aseets/image/image1.png); background-size: cover;").swiper-slide.my-slider-slider
+                div(dir="ltr").slide-text
+                    h2 Название слайда 
+                    p Какой-то вспомогательный текст, в котором кратко описывается что на картинке.
+            div(style="background-image: url(../aseets/image/image2.png); background-size: cover;").swiper-slide.my-slider-slider
+                div(dir="ltr").slide-text
+                    h2 Название слайда
+                    p Какой-то вспомогательный текст, в котором кратко описывается что на картинке.
+            div(style="background-image: url(../aseets/image/image3.png); background-size: cover;").swiper-slide.my-slider-slider
+                div(dir="ltr").slide-text
+                    h2 Название слайда 
+                    p Какой-то вспомогательный текст, в котором кратко описывается что на картинке.
+            div(style="background-image: url(../aseets/image/image4.png); background-size: cover;").swiper-slide.my-slider-slider
+                div(dir="ltr").slide-text
+                    h2 Название слайда 
+                    p Какой-то вспомогательный текст, в котором кратко описывается что на картинке.
+            div(style="background-image: url(../aseets/image/image5.png); background-size: cover;").swiper-slide.my-slider-slider
+                div(dir="ltr").slide-text
+                    h2 Название слайда 
+                    p Какой-то вспомогательный текст, в котором кратко описывается что на картинке.
+            div(style="background-image: url(../aseets/image/image6.png); background-size: cover;").swiper-slide.my-slider-slider
+                div(dir="ltr").slide-text
+                    h2 Название слайда 
+                    p Какой-то вспомогательный текст, в котором кратко описывается что на картинке.
+        .swiper-button-prev
+        .swiper-button-next

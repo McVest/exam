@@ -1,0 +1,17 @@
+mixin navigation(args)
+  .navigation
+    +hamburger()
+    nav.navigation__wrapper
+      ul#hamburger__menu.navigation__list
+        li.navigation__list__item
+          +link({classList: "link__navigation", href: "./index.html", content: "Расписание тура"})
+        li.navigation__list__item 
+          +link({classList: "link__navigation", href: "#", content: "Как записаться"})
+        li.navigation__list__item
+          button#navigation__team.link__navigation.navigation__team Команда
+        li.navigation__list__item 
+          button#navigation__price.link__navigation.navigation__price Стоимость
+          //- +link({classList: "link__navigation", href: "", content: "Стоимость"})
+        li.navigation__list__item--reservation
+          button#navigation__order.link__navigation--reservation.navigation__order Забронировать
+          //- +link({classList: "link__navigation--reservation", href: "./reservation.html", content: "Забронировать"})

@@ -1,0 +1,36 @@
+.card {
+  &__wrapper {
+    box-shadow: 0px 0px 9px 0px rgba(34, 60, 80, 0.2);
+    background: $c-white;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 370px;
+    width: 290px;
+  }
+  &__img {
+    max-height: 160px;
+    & img {
+      max-height: 160px;
+    }
+  }
+  &__info {
+    margin: 30px 25px 25px 25px;
+  }
+  &__title h2{
+    font-family: $f-montserrat;
+    line-height: 24px;
+    font-size: 18px;
+    color: $c-black;
+  }
+  &__text  {
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    font-family: $f-lato;
+    display: -webkit-box;
+    color: $c-dark-gray;
+    line-height: 24px;
+    overflow: hidden;
+    font-size: 14px;
+    height: 140px;
+  }
+}

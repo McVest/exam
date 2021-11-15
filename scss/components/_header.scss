@@ -1,0 +1,20 @@
+.header {
+  box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.25);
+  background-color: $c-white;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  &__wrapper {
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    padding: 0 20px;
+    min-height: 70px;
+    position: relative;
+  }
+  &__logo{
+    z-index: 10;
+  }
+}

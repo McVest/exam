@@ -1,0 +1,105 @@
+.stack-day-seven {
+    background-image: url(../aseets/image/day-seven.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    position: relative;
+    min-height: 1000px;
+    overflow: hidden;
+    &__wrapper {
+      max-width: 1200px;
+      min-height: 1000px;
+      color: $c-white;
+      margin: 0 auto;
+      display: flex;
+      width: 100%;
+      @media (max-width: 850px) {
+        min-height: auto;
+        flex-wrap: wrap;
+      }
+    }
+    &__title {
+      font-family: $f-inter-bold;
+      line-height: 50px;
+      max-width: 860px;
+      font-size: 40px;
+      color: $c-black;
+      @media (max-width: 500px) {
+        line-height: 32px;
+        font-size: 24px;
+      }
+      & span {
+        color: $c-secondary;
+      }
+    }
+    &__section {
+      &-text {
+        color: $c-dark-gray;
+        padding: 0 20px;
+        @media (max-width: 780px) {
+          max-width: 100%;
+        }
+      }
+      &-text2 {
+        align-items: flex-end;
+        margin-bottom: 50px;
+        padding: 0 20px;
+        display: flex;
+        @media (max-width: 850px) {
+          margin-bottom: 470px;
+        }
+        @media (max-width: 780px) {
+          max-width: 100%;
+        }
+      }
+      &-slider {
+        right: calc(50% + 100px);
+        background-size: cover;
+        position: absolute;
+        height: 320px;
+        bottom: 40px;
+        @media (max-width: 850px) {
+          right: auto;
+        }
+        & .day-seven-slider > .swiper-button-prev,
+        .swiper-button-next {
+          border: 1px solid $c-dark-gray;
+          color: $c-dark-gray;
+        }
+        & .day-seven-slider > .swiper-button-prev {
+          right: 0;
+        }
+        & .day-seven-slider > .swiper-button-next {
+          right: 50px;
+          left: auto;
+        }
+      }
+    }
+    &__content {
+      color: $c-black;
+      line-height: 24px;
+      max-width: 540px;
+      margin-top: 50px;
+      font-size: 16px;
+      & p {
+        margin: 0;
+        color: $c-black;
+      }
+    }
+  }
+  .slide-text {
+    background: linear-gradient(0,#000000 1.87%, rgba(0, 0, 0, 0.572235) 58.73%,rgba(0, 0, 0, 0) 94.86%);
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    & p {
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+      display: -webkit-box;
+      overflow: hidden;
+      height: 50px;
+      margin: 10px;
+    }
+  }

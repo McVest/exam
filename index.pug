@@ -1,0 +1,34 @@
+extends ./src/_extends/common
+
+block title
+  title test
+
+block style
+  link(rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css")
+  link(rel="stylesheet" href="./styles/index.css")
+
+
+block content
+  +header()
+  .container
+    +main-banner()
+    +info-steck()
+    +stack-day-one()
+    +stack-day-two()
+    +cards()
+    +stack-day-three()
+    +stack-day-four()
+    +stack-day-five-and-six()
+    +stack-day-seven()
+    +stack-day-eight()
+    +price()
+    +form()
+    +team()
+    +footer()
+    +modal()
+  block script
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js")
+    script(src="https://unpkg.com/swiper@7/swiper-bundle.min.js")
+    script(type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js")
+    script(nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js")
+    script(src="./src/js/main.js")
